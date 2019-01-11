@@ -1,5 +1,6 @@
 .simple-form-group {
   margin-bottom: 1rem;
+  width: 100%;
 }
 .simple-text-label {
   display: block;
@@ -9,7 +10,7 @@
   border-left: 0;
   border-right: 0;
   border-bottom: 2px solid teal;
-  display: inline-block;
+  display: block;
   margin-bottom: 0.5rem;
   padding: 5px;
   font-size: 16px;

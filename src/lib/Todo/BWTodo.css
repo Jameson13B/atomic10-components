@@ -13,6 +13,7 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
+  list-style-type: none;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
@@ -71,9 +72,11 @@ ul li.checked::before {
 /* Style the header */
 .header {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 40px;
   color: white;
-  text-align: center;
 }
 
 /* Clear floats after the header */
@@ -84,7 +87,7 @@ ul li.checked::before {
 }
 
 /* Style the input */
-.header input {
+/* .header input {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -92,7 +95,7 @@ ul li.checked::before {
   padding: 10px;
   float: left;
   font-size: 16px;
-}
+} */
 
 /* Style the "Add" button */
 .addBtn {
@@ -110,4 +113,8 @@ ul li.checked::before {
 
 .addBtn:hover {
   background-color: #bbb;
+}
+
+#myUL span {
+  margin-right: 30px;
 }
