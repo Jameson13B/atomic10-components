@@ -1,12 +1,20 @@
 import React from "react";
-import "./PrimaryButton.css";
+import "./Button.css";
 
-const PrimaryButton = ({ value, click, color }) => (
+const PrimaryButton = ({
+  value,
+  click,
+  bkcolor = "teal",
+  ftcolor = "white"
+}) => (
   <div
-    className={`primary-button ${
-      color === "maroon" ? "maroon-button" : "teal-button"
-    }`}
+    className="primary-button"
     onClick={e => click && click(e)}
+    style={{
+      background: bkcolor,
+      color: ftcolor,
+      border: `2px solid ${bkcolor}`
+    }}
   >
     {value}
   </div>
@@ -17,4 +25,5 @@ export default PrimaryButton;
 // Attributes
 // value: Button Text
 // click: Callback for onClick
-// color: teal or maroon(default: teal)
+// bkcolor: Background color, accepts hex, rgb, and string(default: teal)
+// ftcolor: Font color, accepts hex, rgb, and string(default: white)
