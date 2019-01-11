@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { TextInput, PrimaryButton, SecondaryButton } from "./lib/index";
+import { TextInput, PrimaryButton, SecondaryButton, BWTodo } from "./lib/index";
 
 const App = () => (
   <div style={{ width: 640, margin: "15px auto" }}>
@@ -14,6 +14,8 @@ const App = () => (
     <hr />
     <SecondaryButton value="Click" click={() => alert("Click")} /> Secondary
     Button
+    <hr />
+    <BWTodo list={["Item 1", "Item 2", "Item 3"]} title="B&W Todo" />
   </div>
 );
 
