@@ -1,7 +1,7 @@
 import React from "react";
 import "./BWTodo.css";
 import "../Input/TextInput.css";
-import { TextInput } from "../../lib/index";
+import { TextInput, SecondaryButton } from "../../lib/index";
 
 class BWTodo extends React.Component {
   constructor(props) {
@@ -30,6 +30,7 @@ class BWTodo extends React.Component {
     localStorage.setItem("list", JSON.stringify(list));
   };
   handleInputChange = e => {
+    console.log(e.target);
     this.setState({ [e.target.name]: e.target.value });
   };
   handleComplete = e => {
@@ -49,15 +50,22 @@ class BWTodo extends React.Component {
           <h2>{this.state.title}</h2>
           <TextInput
             name="entry"
-            onChange={this.handleInputChange}
+            change={e => this.handleInputChange(e)}
             placeholder="New Item..."
             type="text"
             value={this.state.entry}
+            ftcolor="white"
             width="100%"
           />
-          <span onClick={this.handleAdd} className="addBtn">
+          <SecondaryButton
+            value="Add"
+            click={this.handleAdd}
+            color="white"
+            className="addBtn"
+          />
+          {/* <span onClick={this.handleAdd} className="addBtn">
             Add
-          </span>
+          </span> */}
         </div>
         <ul id="myUL">
           {this.state.list.map((li, i) => {
