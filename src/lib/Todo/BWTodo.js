@@ -70,9 +70,6 @@ class BWTodo extends React.Component {
             color="white"
             className="addBtn"
           />
-          {/* <span onClick={this.handleAdd} className="addBtn">
-            Add
-          </span> */}
         </div>
         <ul id="myUL">
           {this.state.list.map((li, i) => {

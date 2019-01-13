@@ -21,7 +21,7 @@ const TextInput = ({
       value={value}
       placeholder={placeholder}
       onChange={e => change && change(e)}
-      style={{ width: width, color: ftcolor, background: bkcolor }}
+      style={{ width: width, color: ftcolor, borderBottomColor: bkcolor }}
     />
   </div>
 );
@@ -36,5 +36,5 @@ export default TextInput;
 // change: Callback for onChange
 // name: Name attribute of input
 // ftcolor: Input font color
-// bkcolor: Input background color
+// bkcolor: Input bottom border color
 // width: Input width, accepts px, %, and rem
