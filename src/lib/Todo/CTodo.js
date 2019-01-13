@@ -15,21 +15,24 @@ class CTodo extends React.Component {
     };
   }
   componentDidMount() {
-    if (localStorage.hasOwnProperty("list")) {
+    if (localStorage.hasOwnProperty(`${this.props.title} list`)) {
       this.setState({
-        list: JSON.parse(localStorage.getItem("list")),
+        list: JSON.parse(localStorage.getItem(`${this.props.title} list`)),
         title: this.props.title
       });
     } else {
       this.setState({ list: this.props.list, title: this.props.title });
-      localStorage.setItem("list", JSON.stringify(this.props.list));
+      localStorage.setItem(
+        `${this.props.title} list`,
+        JSON.stringify(this.props.list)
+      );
     }
   }
   handleAdd = () => {
     let list = this.state.list;
     list.push(this.state.entry);
     this.setState({ list, entry: "" });
-    localStorage.setItem("list", JSON.stringify(list));
+    localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleInputChange = e => {
     console.log(e.target);
@@ -40,7 +43,7 @@ class CTodo extends React.Component {
     let list = this.state.list;
     list.splice(e.target.id, e.target.id);
     this.setState({ list });
-    localStorage.setItem("list", JSON.stringify(list));
+    localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleComplete = e => {
     if (e.target.className.includes("checked")) {
@@ -50,7 +53,7 @@ class CTodo extends React.Component {
     }
   };
   componentWillUnmount() {
-    localStorage.removeItem("list");
+    localStorage.removeItem(`${this.props.title} list`);
   }
   render() {
     return (
@@ -58,15 +61,17 @@ class CTodo extends React.Component {
         <div
           id="myDIV"
           className="header"
-          style={{ background: this.props.bkcolor }}
+          style={{
+            background: this.props.bkcolor ? this.props.bkcolor : "#FF9933"
+          }}
         >
-          <h2>{this.state.title}</h2>
+          <h2 style={{ color: this.props.btcolor }}>{this.state.title}</h2>
           <TextInput
             name="entry"
             change={e => this.handleInputChange(e)}
             type="text"
-            label="Enter a new entry:"
             value={this.state.entry}
+            placeholder={this.props.placeholder ? this.props.placeholder : null}
             ftcolor={this.props.ftcolor ? this.props.ftcolor : "white"}
             bkcolor={this.props.incolor ? this.props.incolor : "white"}
             width="100%"
@@ -100,7 +105,8 @@ export default CTodo;
 // Attributes
 // title: To do list title
 // list: An array of todo items
+// placeholder: Input placeholder, can leave blank
 // bkcolor: Header background color(default: teal)
 // ftcolor: Input font color
 // incolor: Input botom line color
-// btcolor: Button color
+// btcolor: Button and title color

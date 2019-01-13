@@ -63,7 +63,6 @@ ul li.checked::before {
 
 /* Style the header */
 .color-todo .header {
-  background-color: teal;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;

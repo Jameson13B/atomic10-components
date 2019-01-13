@@ -13,24 +13,26 @@ class BWTodo extends React.Component {
     };
   }
   componentDidMount() {
-    if (localStorage.hasOwnProperty("list")) {
+    if (localStorage.hasOwnProperty(`${this.props.title} list`)) {
       this.setState({
-        list: JSON.parse(localStorage.getItem("list")),
+        list: JSON.parse(localStorage.getItem(`${this.props.title} list`)),
         title: this.props.title
       });
     } else {
       this.setState({ list: this.props.list, title: this.props.title });
-      localStorage.setItem("list", JSON.stringify(this.props.list));
+      localStorage.setItem(
+        `${this.props.title} list`,
+        JSON.stringify(this.props.list)
+      );
     }
   }
   handleAdd = () => {
     let list = this.state.list;
     list.push(this.state.entry);
     this.setState({ list, entry: "" });
-    localStorage.setItem("list", JSON.stringify(list));
+    localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleInputChange = e => {
-    console.log(e.target);
     this.setState({ [e.target.name]: e.target.value });
   };
   handleDelete = e => {
@@ -38,7 +40,7 @@ class BWTodo extends React.Component {
     let list = this.state.list;
     list.splice(e.target.id, e.target.id);
     this.setState({ list });
-    localStorage.setItem("list", JSON.stringify(list));
+    localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleComplete = e => {
     if (e.target.className.includes("checked")) {
@@ -48,7 +50,7 @@ class BWTodo extends React.Component {
     }
   };
   componentWillUnmount() {
-    localStorage.removeItem("list");
+    localStorage.removeItem(`${this.props.title} list`);
   }
   render() {
     return (
@@ -62,6 +64,7 @@ class BWTodo extends React.Component {
             type="text"
             value={this.state.entry}
             ftcolor="white"
+            bkcolor="white"
             width="100%"
           />
           <SecondaryButton
