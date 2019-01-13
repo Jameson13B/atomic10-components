@@ -33,12 +33,19 @@ class BWTodo extends React.Component {
     console.log(e.target);
     this.setState({ [e.target.name]: e.target.value });
   };
-  handleComplete = e => {
+  handleDelete = e => {
     console.log(e.target.id);
     let list = this.state.list;
     list.splice(e.target.id, e.target.id);
     this.setState({ list });
     localStorage.setItem("list", JSON.stringify(list));
+  };
+  handleComplete = e => {
+    if (e.target.className.includes("checked")) {
+      e.target.className = "";
+    } else {
+      e.target.className = "checked";
+    }
   };
   componentWillUnmount() {
     localStorage.removeItem("list");
@@ -70,8 +77,8 @@ class BWTodo extends React.Component {
         <ul id="myUL">
           {this.state.list.map((li, i) => {
             return (
-              <li key={i}>
-                <span onClick={this.handleComplete} id={i}>
+              <li key={i} onClick={this.handleComplete}>
+                <span onClick={this.handleDelete} id={i}>
                   &otimes;
                 </span>
                 {li}

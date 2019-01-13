@@ -30,6 +30,11 @@ ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
+ul li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /* Darker background-color on hover */
 ul li:hover {
   background: #ddd;
@@ -72,6 +77,8 @@ ul li.checked::before {
 /* Style the header */
 .header {
   background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
