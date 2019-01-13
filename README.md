@@ -2,7 +2,8 @@
 
 > Atomic10 is a React component library with clean, contemporary, and customizable components
 
-[![NPM Version][npm-image]][npm-url]
+[![NPM Version][version-image]][version-url]
+[![NPM Download][download-image]][download-url]
 
 <!-- [![Linux Build][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url] -->
@@ -23,9 +24,7 @@ Coming Soon...
 
 Coming Soon...
 
-[npm-image]: https://img.shields.io/npm/v/live-xxx.svg
-[npm-url]: https://npmjs.org/package/live-xxx
-[travis-image]: https://img.shields.io/travis/live-js/live-xxx/master.svg
-[travis-url]: https://travis-ci.org/live-js/live-xxx
-[coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
-[coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
+[version-image]: https://img.shields.io/npm/v/atomic10-components.svg
+[version-url]: https://npmjs.org/package/atomic10-components
+[download-image]: https://img.shields.io/npm/dt/atomic10-components.svg
+[download-url]: https://npmjs.org/package/atomic10-components
