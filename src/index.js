@@ -11,7 +11,9 @@ import {
 
 const App = () => (
   <div style={{ width: 640, margin: "15px auto" }}>
-    <h1>Atomic10 Component Library</h1>
+    <h1>
+      Atomic<span style={{ color: "#FF9933" }}>10</span> Component Library
+    </h1>
     <TextInput label="Label Input" placeholder="name@example.com" width="30%" />
     <hr />
     <TextInput label="Password" placeholder="Enter Password" type="password" />
@@ -21,9 +23,13 @@ const App = () => (
     <SecondaryButton value="Click" click={() => alert("Click")} /> Secondary
     Button
     <hr />
-    <BWTodo list={["Item 1", "Item 2", "Item 3"]} title="B&W Todo" />
+    <CTodo
+      list={["Item 1", "Item 2", "Item 3"]}
+      title="Color Todo"
+      placeholder="New Item..."
+    />
     <hr />
-    <CTodo list={["Item 1", "Item 2", "Item 3"]} title="Color Todo" />
+    <BWTodo list={["Item 1", "Item 2", "Item 3"]} title="B&W Todo" />
   </div>
 );
 

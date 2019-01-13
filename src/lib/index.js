@@ -10,6 +10,5 @@ export { SecondaryButton };
 export { BWTodo };
 export { CTodo };
 
-// Color to do
 // Simple Card and Advance Card
 // Tooltips
