@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-const SecondaryButton = ({ value, click, color = "teal" }) => (
+const SecondaryButton = ({ value, click, color = "#FF9933" }) => (
   <div
     className="secondary-button"
     onClick={e => click && click(e)}
@@ -16,4 +16,4 @@ export default SecondaryButton;
 // Attributes
 // value: Button Text
 // click: Callback for onClick
-// color: Border and font color, accepts hex, rgb, and string(default: teal)
+// color: Border and font color, accepts hex, rgb, and string(default: Neon Carrot)

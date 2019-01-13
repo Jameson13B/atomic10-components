@@ -9,7 +9,7 @@ const TextInput = ({
   change,
   name,
   ftcolor,
-  bkcolor,
+  bkcolor = "#FF9933",
   width
 }) => (
   <div className="simple-form-group">
@@ -36,5 +36,5 @@ export default TextInput;
 // change: Callback for onChange
 // name: Name attribute of input
 // ftcolor: Input font color
-// bkcolor: Input bottom border color
+// bkcolor: Input bottom border color(default: Neon Carrot)
 // width: Input width, accepts px, %, and rem

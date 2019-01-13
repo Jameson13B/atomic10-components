@@ -4,7 +4,7 @@ import "./Button.css";
 const PrimaryButton = ({
   value,
   click,
-  bkcolor = "teal",
+  bkcolor = "#FF9933",
   ftcolor = "white"
 }) => (
   <div
@@ -25,5 +25,5 @@ export default PrimaryButton;
 // Attributes
 // value: Button Text
 // click: Callback for onClick
-// bkcolor: Background color, accepts hex, rgb, and string(default: teal)
+// bkcolor: Background color, accepts hex, rgb, and string(default: Neon Carrot)
 // ftcolor: Font color, accepts hex, rgb, and string(default: white)
