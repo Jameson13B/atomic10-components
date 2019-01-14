@@ -274,7 +274,7 @@ List of class names for styling.
 ## Issues and Issue Tracker
 
 Please see the open issues in our issue tracker. If you have questions, concerns, bug reports, etc, please file an issue.
-[Our Issue Tracker](https://github.com/Lambda-School-Labs/Labs8-TeamComms/issues)
+[Our Issue Tracker](https://github.com/Jameson13B/atomic10-components/issues)
 
 Before reporting a bug or issue please make sure it is not already reported. If it isn't, report using the following format.
 
