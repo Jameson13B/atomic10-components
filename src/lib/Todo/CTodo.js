@@ -59,27 +59,28 @@ class CTodo extends React.Component {
     return (
       <div className="color-todo">
         <div
-          id="myDIV"
           className="header"
           style={{
-            background: this.props.bkcolor ? this.props.bkcolor : "#FF9933"
+            background: this.props.bkColor ? this.props.bkColor : "#FF9933"
           }}
         >
-          <h2 style={{ color: this.props.btcolor }}>{this.state.title}</h2>
+          <h2 className="title" style={{ color: this.props.btnColor }}>
+            {this.state.title}
+          </h2>
           <TextInput
             name="entry"
             change={e => this.handleInputChange(e)}
             type="text"
             value={this.state.entry}
             placeholder={this.props.placeholder ? this.props.placeholder : null}
-            ftcolor={this.props.ftcolor ? this.props.ftcolor : "white"}
-            bkcolor={this.props.incolor ? this.props.incolor : "white"}
+            ftcolor={this.props.ftColor ? this.props.ftColor : "white"}
+            bkcolor={this.props.inColor ? this.props.inColor : "white"}
             width="100%"
           />
           <SecondaryButton
             value="Add"
             click={this.handleAdd}
-            color={this.props.btcolor ? this.props.btcolor : "white"}
+            color={this.props.btnColor ? this.props.btnColor : "white"}
             className="addBtn"
           />
         </div>
@@ -106,7 +107,7 @@ export default CTodo;
 // title: To do list title
 // list: An array of todo items
 // placeholder: Input placeholder, can leave blank
-// bkcolor: Header background color(default: teal)
-// ftcolor: Input font color
-// incolor: Input botom line color
-// btcolor: Button and title color
+// bkColor: Header background color(default: Neon Carrot)
+// ftColor: Input font color(default: White)
+// inColor: Input botom line color(default: White)
+// btnColor: Button and title color(default: White)

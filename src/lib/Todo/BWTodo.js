@@ -56,7 +56,7 @@ class BWTodo extends React.Component {
     return (
       <div>
         <div id="myDIV" className="header">
-          <h2>{this.state.title}</h2>
+          <h2 className="title">{this.state.title}</h2>
           <TextInput
             name="entry"
             change={e => this.handleInputChange(e)}
