@@ -14,12 +14,14 @@
 .advanced-card .title {
   margin-top: 10px;
   overflow: auto;
+  white-space: nowrap;
 }
 
 .advanced-card .subtitle {
   color: grey;
   font-style: italic;
   overflow: auto;
+  white-space: nowrap;
 }
 
 .advanced-card .paragraph {
