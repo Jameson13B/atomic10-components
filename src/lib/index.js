@@ -13,6 +13,3 @@ export { BWTodo };
 export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
-
-// Simple Card and Advance Card
-// Tooltips

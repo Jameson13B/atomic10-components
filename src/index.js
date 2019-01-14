@@ -20,10 +20,12 @@ const App = () => (
     <hr />
     <TextInput label="Password" placeholder="Enter Password" type="password" />
     <hr />
-    <PrimaryButton value="Click" click={() => alert("Click")} /> Primary Button
+    <PrimaryButton value="Click" click={() => alert("Click")} />
     <hr />
-    <SecondaryButton value="Click" click={() => alert("Click")} /> Secondary
-    Button
+    <br />
+    <SecondaryButton value="Click" click={() => alert("Click")} />
+    <br />
+    <br />
     <hr />
     <CTodo
       list={["Item 1", "Item 2", "Item 3"]}
