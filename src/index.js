@@ -46,7 +46,7 @@ const App = () => (
     <SimpleCard
       title="Simple Card"
       subTitle="Subtitle"
-      paragraph="Simple card that doesn't has an image and a button. This is a paragraph."
+      paragraph="Simple card that doesn't have an image and a button. This is a paragraph."
       click={() => alert("Card Click")}
     />
   </div>
