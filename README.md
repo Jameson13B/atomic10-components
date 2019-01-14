@@ -1,6 +1,6 @@
 # Atomic10 Components
 
-> Atomic10 is a React component library with clean, contemporary, and customizable components
+> Atomic10 is a React component library with clean, contemporary, and customizable components. New components will be created and added with future updates.
 
 [![NPM Version][version-image]][version-url]
 [![NPM Download][download-image]][download-url]
@@ -9,6 +9,8 @@
 [![Test Coverage][coveralls-image]][coveralls-url] -->
 
 ## Install
+
+Atomic10 components are simple to install and use.
 
 ```bash
 npm i atomic10-components
@@ -116,14 +118,15 @@ handleClick  =  ()  =>  {
 
 #### Properties
 
-| Name        | Type     | Default | Description                                |
-| ----------- | -------- | ------- | ------------------------------------------ |
-| `brdColor`  | string   | `Black` | Border color. Accepts hex, rgb, and string |
-| `click`     | function | null    | Callback for card onClick                  |
-| `paragraph` | string   | null    | Paragraph for card                         |
-| `title`     | string   | null    | Text of the card                           |
-| `subTitle`  | string   | null    | Subtitle for card                          |
-| `width`     | string   | `30%`   | Width for card                             |
+| Name        | Type     | Default | Description                                         |
+| ----------- | -------- | ------- | --------------------------------------------------- |
+| `bkColor`   | string   | `White` | Card background color. Accepts hex, rgb, and string |
+| `brdColor`  | string   | `Black` | Border color. Accepts hex, rgb, and string          |
+| `click`     | function | null    | Callback for card onClick                           |
+| `paragraph` | string   | null    | Paragraph for card                                  |
+| `title`     | string   | null    | Text of the card                                    |
+| `subTitle`  | string   | null    | Subtitle for card                                   |
+| `width`     | string   | `30%`   | Width for card                                      |
 
 #### Styling
 
@@ -142,7 +145,7 @@ List of class names for styling.
 
 ![Advanced Card](./ReadmeImg/advancedcard.png)
 
-This is an advanced card that can store data for a product, service, profile, etc. Card and button have separate customizable onClick. Image, content are customizable and the box will auto format as info grows.
+This is an advanced card that can store data for a product, service, profile, etc. Card and button have separate customizable onClick. Image, content, and button are customizable and the box will auto format as info grows.
 
 ```
 import { AdvancedCard } from "atomic10-components";
@@ -165,18 +168,19 @@ handleClick  =  ()  =>  {
 
 #### Properties
 
-| Name        | Type     | Default       | Description                                |
-| ----------- | -------- | ------------- | ------------------------------------------ |
-| `brdColor`  | string   | `Black`       | Border color. Accepts hex, rgb, and string |
-| `btnClick`  | function | null          | Callback for button onClick                |
-| `btnColor`  | string   | `Neon Carrot` | Button color. Accepts hex, rgb, and string |
-| `btnValue`  | string   | `Black`       | Text of the button                         |
-| `click`     | function | null          | Callback for card onClick                  |
-| `image`     | image    | null          | Image for header                           |
-| `paragraph` | string   | null          | Paragraph for card                         |
-| `title`     | string   | null          | Text of the card                           |
-| `subTitle`  | string   | null          | Subtitle for card                          |
-| `width`     | string   | `30%`         | Width for card                             |
+| Name        | Type     | Default       | Description                                         |
+| ----------- | -------- | ------------- | --------------------------------------------------- |
+| `bkColor`   | string   | `White`       | Card background color. Accepts hex, rgb, and string |
+| `brdColor`  | string   | `Black`       | Border color. Accepts hex, rgb, and string          |
+| `btnClick`  | function | null          | Callback for button onClick                         |
+| `btnColor`  | string   | `Neon Carrot` | Button color. Accepts hex, rgb, and string          |
+| `btnValue`  | string   | `Black`       | Text of the button                                  |
+| `click`     | function | null          | Callback for card onClick                           |
+| `image`     | image    | null          | Image for header                                    |
+| `paragraph` | string   | null          | Paragraph for card                                  |
+| `title`     | string   | null          | Text of the card                                    |
+| `subTitle`  | string   | null          | Subtitle for card                                   |
+| `width`     | string   | `30%`         | Width for card                                      |
 
 #### Styling
 
@@ -195,6 +199,10 @@ List of class names for styling.
 ## License
 
 <!-- [MIT](http://vjpr.mit-license.org) -->
+
+Coming Soon...
+
+## Issues and Issue Tracker
 
 Coming Soon...
 

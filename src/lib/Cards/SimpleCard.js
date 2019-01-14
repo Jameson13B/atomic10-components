@@ -7,13 +7,14 @@ const SimpleCard = ({
   paragraph,
   click,
   brdColor,
+  bkColor,
   width = "30%"
 }) => {
   return (
     <div
       className="simple-card"
       onClick={click}
-      style={{ width: width, borderColor: brdColor }}
+      style={{ width: width, borderColor: brdColor, background: bkColor }}
     >
       <div className="title">{title}</div>
       <div className="subtitle">{subTitle}</div>
@@ -29,4 +30,5 @@ export default SimpleCard;
 // paragraph: Card Paragraph
 // click: Callback function for clicking card
 // brdColor: Border color
+// bkColor: Card background color, accepts hex, rgb, and string(default: White)
 // width: Width for card(default: 30%)

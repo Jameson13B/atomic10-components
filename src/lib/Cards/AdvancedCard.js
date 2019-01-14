@@ -8,6 +8,7 @@ const AdvancedCard = ({
   paragraph,
   click,
   brdColor,
+  bkColor,
   btnClick,
   btnValue,
   btnColor = "#FF9933",
@@ -18,7 +19,7 @@ const AdvancedCard = ({
     <div
       className="advanced-card"
       onClick={click}
-      style={{ width: width, borderColor: brdColor }}
+      style={{ width: width, borderColor: brdColor, background: bkColor }}
     >
       <img src={image} alt="Missing img property" className="img" />
       <div className="title">{title}</div>
@@ -38,6 +39,7 @@ export default AdvancedCard;
 // paragraph: Card Paragraph
 // click: Callback function for clicking card
 // brdColor: Border color
+// bkColor: Card background color, accepts hex, rgb, and string(default: White)
 // btnClick: Callback function for button
 // btnValue: Button text(this is required for button to show)
 // btnColor: Button background color(default: Neon Carrot)

@@ -15,4 +15,7 @@ export { AdvancedCard };
 export { SimpleCard };
 
 // Add BWTodo and CTodo to README
-// change classname to include signature(a10-title, a10-description, etc.)
+// Check margins when missing data
+// Change classNames to include signature(a10-title, a10-description, etc.)
+// Redo screenshot of simple card with typo fixed
+// Finish README(badge URLs, License, Issue Tracker)
