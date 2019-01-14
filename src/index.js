@@ -22,10 +22,7 @@ const App = () => (
     <hr />
     <PrimaryButton value="Click" click={() => alert("Click")} />
     <hr />
-    <br />
     <SecondaryButton value="Click" click={() => alert("Click")} />
-    <br />
-    <br />
     <hr />
     <CTodo
       list={["Item 1", "Item 2", "Item 3"]}
@@ -49,10 +46,8 @@ const App = () => (
     <SimpleCard
       title="Simple Card"
       subTitle="Subtitle"
-      paragraph="Advanced card that has an image and a button. This is a paragraph."
+      paragraph="Simple card that doesn't has an image and a button. This is a paragraph."
       click={() => alert("Card Click")}
-      brdColor="#FF9933"
-      width="30%"
     />
   </div>
 );

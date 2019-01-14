@@ -34,20 +34,20 @@ handleClick  =  ()  =>  {
 
 #### Properties
 
-| Name      | Type     | Default     | Description                                    |
-| --------- | -------- | ----------- | ---------------------------------------------- |
-| `value`   | string   | null        | Text of the button                             |
-| `click`   | function | null        | Callback for buttons onClick                   |
-| `bkcolor` | string   | Neon Carrot | Background color. Accepts hex, rgb, and string |
-| `ftcolor` | string   | White       | Font color. Accepts hex, rgb, and string       |
+| Name      | Type     | Default       | Description                                    |
+| --------- | -------- | ------------- | ---------------------------------------------- |
+| `bkcolor` | string   | `Neon Carrot` | Background color. Accepts hex, rgb, and string |
+| `click`   | function | null          | Callback for buttons onClick                   |
+| `ftcolor` | string   | `White`       | Font color. Accepts hex, rgb, and string       |
+| `value`   | string   | null          | Text of the button                             |
 
 #### Styling
 
 List of class names for styling.
 
-| Name             | Element        |
-| ---------------- | -------------- |
-| `primary-button` | Button Element |
+| Name             | Element     |
+| ---------------- | ----------- |
+| `primary-button` | Div Element |
 
 <hr />
 
@@ -69,19 +69,118 @@ handleClick  =  ()  =>  {
 
 #### Properties
 
-| Name    | Type     | Default     | Description                                         |
-| ------- | -------- | ----------- | --------------------------------------------------- |
-| `value` | string   | null        | Text of the button                                  |
-| `click` | function | null        | Callback for buttons onClick                        |
-| `color` | string   | Neon Carrot | Border and font color. Accepts hex, rgb, and string |
+| Name    | Type     | Default       | Description                                         |
+| ------- | -------- | ------------- | --------------------------------------------------- |
+| `click` | function | null          | Callback for buttons onClick                        |
+| `color` | string   | `Neon Carrot` | Border and font color. Accepts hex, rgb, and string |
+| `value` | string   | null          | Text of the button                                  |
 
 #### Styling
 
 List of class names for styling.
 
-| Name               | Element        |
-| ------------------ | -------------- |
-| `secondary-button` | Button Element |
+| Name               | Element     |
+| ------------------ | ----------- |
+| `secondary-button` | Div Element |
+
+<hr />
+
+### Simple Card
+
+![Simple Card](./ReadmeImg/simplecard.png)
+
+This is a paragraph describing the SimpleCard component. It will explain its details, quirks, and other info.
+
+```
+import { SimpleCard } from "atomic10-components";
+
+handleClick  =  ()  =>  {
+	alert("Click");
+};
+
+<SimpleCard
+  title="Simple Card"
+  subTitle="Subtitle"
+  paragraph="Advanced card that has an image and a button. This is a paragraph."
+  click={() => alert("Card Click")}
+/>
+```
+
+#### Properties
+
+| Name        | Type     | Default | Description                                |
+| ----------- | -------- | ------- | ------------------------------------------ |
+| `brdColor`  | string   | `Black` | Border color. Accepts hex, rgb, and string |
+| `click`     | function | null    | Callback for card onClick                  |
+| `paragraph` | string   | null    | Paragraph for card                         |
+| `title`     | string   | null    | Text of the card                           |
+| `subTitle`  | string   | null    | Subtitle for card                          |
+| `width`     | string   | `30%`   | Width for card                             |
+
+#### Styling
+
+List of class names for styling.
+
+| Name               | Element     |
+| ------------------ | ----------- |
+| `secondary-button` | Div Element |
+| `title`            | Div Element |
+| `subtitle`         | Div Element |
+| `paragraph`        | Div Element |
+
+<hr />
+
+### Advanced Card
+
+![Advanced Card](./ReadmeImg/advancedcard.png)
+
+This is a paragraph describing the AdvancedCard component. It will explain its details, quirks, and other info.
+
+```
+import { AdvancedCard } from "atomic10-components";
+
+handleClick  =  ()  =>  {
+	alert("Click");
+};
+
+<AdvancedCard
+  title="Simple Card"
+  subTitle="Subtitle"
+  paragraph="Advanced card that has an image and a button. This is a paragraph."
+  click={() => alert("Card Click")}
+  btnClick={() => alert("Button Click")}
+  btnValue="Click"
+  image="https://goo.gl/2QuCc5"
+  width="50%"
+/>
+```
+
+#### Properties
+
+| Name        | Type     | Default       | Description                                |
+| ----------- | -------- | ------------- | ------------------------------------------ |
+| `brdColor`  | string   | `Black`       | Border color. Accepts hex, rgb, and string |
+| `btnClick`  | function | null          | Callback for button onClick                |
+| `btnColor`  | string   | `Neon Carrot` | Button color. Accepts hex, rgb, and string |
+| `btnValue`  | string   | `Black`       | Text of the button                         |
+| `click`     | function | null          | Callback for card onClick                  |
+| `image`     | image    | null          | Image for header                           |
+| `paragraph` | string   | null          | Paragraph for card                         |
+| `title`     | string   | null          | Text of the card                           |
+| `subTitle`  | string   | null          | Subtitle for card                          |
+| `width`     | string   | `30%`         | Width for card                             |
+
+#### Styling
+
+List of class names for styling.
+
+| Name              | Element     |
+| ----------------- | ----------- |
+| `advanced-button` | Div Element |
+| `img`             | Img Element |
+| `title`           | Div Element |
+| `subtitle`        | Div Element |
+| `paragraph`       | Div Element |
 
 <hr />
 

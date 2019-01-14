@@ -13,3 +13,6 @@ export { BWTodo };
 export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
+
+// Add BWTodo and CTodo to README
+// change classname to include signature(a10-title, a10-description, etc.)
