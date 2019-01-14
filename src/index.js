@@ -43,6 +43,15 @@ const App = () => (
       image="https://goo.gl/2QuCc5"
       width="50%"
     />
+    <hr />
+    <SimpleCard
+      title="Simple Card"
+      subTitle="Subtitle"
+      paragraph="Advanced card that has an image and a button. This is a paragraph."
+      click={() => alert("Card Click")}
+      brdColor="#FF9933"
+      width="30%"
+    />
   </div>
 );
 
