@@ -1,4 +1,4 @@
-.primary-button {
+.a10-primary-button {
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -11,12 +11,12 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.primary-button:hover,
-.primary-button:active {
+.a10-primary-button:hover,
+.a10-primary-button:active {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-.secondary-button {
+.a10-secondary-button {
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -29,8 +29,8 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.secondary-button:hover,
-.secondary-button:active {
+.a10-secondary-button:hover,
+.a10-secondary-button:active {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }

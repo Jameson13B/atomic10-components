@@ -46,10 +46,10 @@ class CTodo extends React.Component {
     localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleComplete = e => {
-    if (e.target.className.includes("checked")) {
+    if (e.target.className.includes("a10-checked")) {
       e.target.className = "";
     } else {
-      e.target.className = "checked";
+      e.target.className = "a10-checked";
     }
   };
   componentWillUnmount() {
@@ -57,14 +57,14 @@ class CTodo extends React.Component {
   }
   render() {
     return (
-      <div className="color-todo">
+      <div className="a10-color-todo">
         <div
-          className="header"
+          className="a10-header"
           style={{
             background: this.props.bkColor ? this.props.bkColor : "#FF9933"
           }}
         >
-          <h2 className="title" style={{ color: this.props.btnColor }}>
+          <h2 className="a10-title" style={{ color: this.props.btnColor }}>
             {this.state.title}
           </h2>
           <TextInput
@@ -81,7 +81,7 @@ class CTodo extends React.Component {
             value="Add"
             click={this.handleAdd}
             color={this.props.btnColor ? this.props.btnColor : "white"}
-            className="addBtn"
+            className="a10-addBtn"
           />
         </div>
         <ul id="myUL">

@@ -1,4 +1,4 @@
-.advanced-card {
+.a10-advanced-card {
   border: 1px solid;
   border-radius: 5px;
   cursor: pointer;
@@ -7,24 +7,24 @@
   padding: 15px;
 }
 
-.advanced-card .img {
+.a10-advanced-card .a10-img {
   width: 100%;
 }
 
-.advanced-card .title {
+.a10-advanced-card .a10-title {
   margin-top: 10px;
   overflow: auto;
   white-space: nowrap;
 }
 
-.advanced-card .subtitle {
+.a10-advanced-card .a10-subtitle {
   color: grey;
   font-style: italic;
   overflow: auto;
   white-space: nowrap;
 }
 
-.advanced-card .paragraph {
+.a10-advanced-card .a10-paragraph {
   margin: 10px 0;
   overflow: auto;
 }

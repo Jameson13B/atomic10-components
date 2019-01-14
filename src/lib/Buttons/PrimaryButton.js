@@ -8,7 +8,7 @@ const PrimaryButton = ({
   ftcolor = "white"
 }) => (
   <div
-    className="primary-button"
+    className="a10-primary-button"
     onClick={e => click && click(e)}
     style={{
       background: bkcolor,

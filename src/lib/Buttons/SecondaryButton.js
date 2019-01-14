@@ -3,7 +3,7 @@ import "./Button.css";
 
 const SecondaryButton = ({ value, click, color = "#FF9933" }) => (
   <div
-    className="secondary-button"
+    className="a10-secondary-button"
     onClick={e => click && click(e)}
     style={{ border: `2px solid ${color}`, color: color }}
   >

@@ -12,13 +12,13 @@ const SimpleCard = ({
 }) => {
   return (
     <div
-      className="simple-card"
+      className="a10-simple-card"
       onClick={click}
       style={{ width: width, borderColor: brdColor, background: bkColor }}
     >
-      <div className="title">{title}</div>
-      <div className="subtitle">{subTitle}</div>
-      <div className="paragraph">{paragraph}</div>
+      <div className="a10-title">{title}</div>
+      <div className="a10-subtitle">{subTitle}</div>
+      <div className="a10-paragraph">{paragraph}</div>
     </div>
   );
 };

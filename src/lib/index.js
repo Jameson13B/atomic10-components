@@ -14,6 +14,5 @@ export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
 
-// Change classNames to include signature(a10-title, a10-description, etc.)
 // Issue Tracker
 // After publishing, fix badges on README

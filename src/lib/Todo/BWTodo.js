@@ -43,10 +43,10 @@ class BWTodo extends React.Component {
     localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleComplete = e => {
-    if (e.target.className.includes("checked")) {
+    if (e.target.className.includes("a10-checked")) {
       e.target.className = "";
     } else {
-      e.target.className = "checked";
+      e.target.className = "a10-checked";
     }
   };
   componentWillUnmount() {
@@ -55,8 +55,8 @@ class BWTodo extends React.Component {
   render() {
     return (
       <div>
-        <div id="myDIV" className="header">
-          <h2 className="title">{this.state.title}</h2>
+        <div id="myDIV" className="a10-header">
+          <h2 className="a10-title">{this.state.title}</h2>
           <TextInput
             name="entry"
             change={e => this.handleInputChange(e)}
@@ -71,7 +71,7 @@ class BWTodo extends React.Component {
             value="Add"
             click={this.handleAdd}
             color="white"
-            className="addBtn"
+            className="a10-addBtn"
           />
         </div>
         <ul id="myUL">

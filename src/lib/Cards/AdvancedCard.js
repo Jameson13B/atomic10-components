@@ -17,14 +17,14 @@ const AdvancedCard = ({
 }) => {
   return (
     <div
-      className="advanced-card"
+      className="a10-advanced-card"
       onClick={click}
       style={{ width: width, borderColor: brdColor, background: bkColor }}
     >
-      <img src={image} alt="Missing img property" className="img" />
-      <div className="title">{title}</div>
-      <div className="subtitle">{subTitle}</div>
-      <div className="paragraph">{paragraph}</div>
+      <img src={image} alt="Missing img property" className="a10-img" />
+      <div className="a10-title">{title}</div>
+      <div className="a10-subtitle">{subTitle}</div>
+      <div className="a10-paragraph">{paragraph}</div>
       {btnValue ? (
         <SecondaryButton click={btnClick} value={btnValue} color={btnColor} />
       ) : null}

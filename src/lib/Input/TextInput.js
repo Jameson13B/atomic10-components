@@ -12,12 +12,12 @@ const TextInput = ({
   bkcolor = "#FF9933",
   width
 }) => (
-  <div className="simple-form-group">
-    {label && <label className="simple-text-label">{label}</label>}
+  <div className="a10-simple-form-group">
+    {label && <label className="a10-simple-text-label">{label}</label>}
     <input
       type={type}
       name={name}
-      className="simple-text-input"
+      className="a10-simple-text-input"
       value={value}
       placeholder={placeholder}
       onChange={e => change && change(e)}
