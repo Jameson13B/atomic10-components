@@ -1,7 +1,7 @@
 {
   "name": "atomic10-components",
   "description": "Atomic10 is a React component library with clean, contemporary, and customizable components.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
