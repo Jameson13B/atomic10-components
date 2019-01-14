@@ -14,6 +14,6 @@ export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
 
-// Check margins when missing data
 // Change classNames to include signature(a10-title, a10-description, etc.)
-// Finish README(badge URLs, License, Issue Tracker)
+// Issue Tracker
+// After publishing, fix badges on README

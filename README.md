@@ -269,9 +269,7 @@ List of class names for styling.
 
 ## License
 
-<!-- [MIT](http://vjpr.mit-license.org) -->
-
-Coming Soon...
+[MIT License](LICENSE)
 
 ## Issues and Issue Tracker
 
