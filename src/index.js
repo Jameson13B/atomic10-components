@@ -6,7 +6,9 @@ import {
   PrimaryButton,
   SecondaryButton,
   BWTodo,
-  CTodo
+  CTodo,
+  AdvancedCard,
+  SimpleCard
 } from "./lib/index";
 
 const App = () => (
@@ -30,6 +32,17 @@ const App = () => (
     />
     <hr />
     <BWTodo list={["Item 1", "Item 2", "Item 3"]} title="B&W Todo" />
+    <hr />
+    <AdvancedCard
+      title="Simple Card"
+      subTitle="Subtitle"
+      paragraph="Advanced card that has an image and a button. This is a paragraph."
+      click={() => alert("Card Click")}
+      btnClick={() => alert("Button Click")}
+      btnValue="Click"
+      image="https://goo.gl/2QuCc5"
+      width="50%"
+    />
   </div>
 );
 
