@@ -13,6 +13,3 @@ export { BWTodo };
 export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
-
-// Issue Tracker
-// After publishing, fix badges on README

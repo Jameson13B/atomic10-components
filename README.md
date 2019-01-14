@@ -273,7 +273,29 @@ List of class names for styling.
 
 ## Issues and Issue Tracker
 
-Coming Soon...
+Please see the open issues in our issue tracker. If you have questions, concerns, bug reports, etc, please file an issue.
+[Our Issue Tracker](https://github.com/Lambda-School-Labs/Labs8-TeamComms/issues)
+
+Before reporting a bug or issue please make sure it is not already reported. If it isn't, report using the following format.
+
+Example:
+
+> Short and descriptive example bug report title
+>
+> A summary of the issue and the browser/OS environment in which it occurs. If
+> suitable, include the steps required to reproduce the bug.
+>
+> 1.  This is the first step
+> 2.  This is the second step
+> 3.  Further steps, etc.
+>
+> Any other information you want to share that is relevant to the issue being
+> reported. This might include the lines of code that you have identified as
+> causing the bug, and potential solutions (and your opinions on their
+> merits).
+
+A good bug/issue report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
 
 [version-image]: https://img.shields.io/npm/v/atomic10-components.svg
 [version-url]: https://npmjs.org/package/atomic10-components
