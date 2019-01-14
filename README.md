@@ -28,7 +28,7 @@ npm i atomic10-components
 
 ![Primary Button](./ReadmeImg/primarybutton.png)
 
-This is a paragraph describing the PrimaryButton component. It will explain its details, quirks, and other info.
+This primary button is a solid color button with rounded corners. There is a shrink hover effect on this button. Customize the color, text, and onClick function.
 
 ```
 import { PrimaryButton } from "atomic10-components";
@@ -63,7 +63,7 @@ List of class names for styling.
 
 ![Secondary Button](./ReadmeImg/secondarybutton.png)
 
-This is a paragraph describing the SecondaryButton component. It will explain its details, quirks, and other info.
+This secondary button is a solid white button with colored border and text. This button has rounded corners. There is a shrink hover effect on this button. Customize the color, text, and onClick function.
 
 ```
 import { SecondaryButton } from "atomic10-components";
@@ -97,7 +97,7 @@ List of class names for styling.
 
 ![Simple Card](./ReadmeImg/simplecard.png)
 
-This is a paragraph describing the SimpleCard component. It will explain its details, quirks, and other info.
+This is a simple card that can store data for a product, service, etc. Card can have an onClick added. All content is customizable and the box will auto format as info grows.
 
 ```
 import { SimpleCard } from "atomic10-components";
@@ -142,7 +142,7 @@ List of class names for styling.
 
 ![Advanced Card](./ReadmeImg/advancedcard.png)
 
-This is a paragraph describing the AdvancedCard component. It will explain its details, quirks, and other info.
+This is an advanced card that can store data for a product, service, profile, etc. Card and button have separate customizable onClick. Image, content are customizable and the box will auto format as info grows.
 
 ```
 import { AdvancedCard } from "atomic10-components";
