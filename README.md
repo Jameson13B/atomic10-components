@@ -16,6 +16,14 @@ npm i atomic10-components
 
 ## Usage
 
+> ### Components:
+>
+> [Primary Button](#Primary-Button)  
+> [Secondary Button](#Secondary-Button)
+>
+> [Simple Card](#Simple-Card)  
+> [Advanced Card](#Advanced-Card)
+
 ### Primary Button
 
 ![Primary Button](./ReadmeImg/primarybutton.png)
