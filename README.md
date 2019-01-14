@@ -55,9 +55,9 @@ handleClick  =  ()  =>  {
 
 List of class names for styling.
 
-| Name             | Element |
-| ---------------- | ------- |
-| `primary-button` | `div`   |
+| Name                 | Element |
+| -------------------- | ------- |
+| `a10-primary-button` | `div`   |
 
 <hr />
 
@@ -89,9 +89,9 @@ handleClick  =  ()  =>  {
 
 List of class names for styling.
 
-| Name               | Element |
-| ------------------ | ------- |
-| `secondary-button` | `div`   |
+| Name                   | Element |
+| ---------------------- | ------- |
+| `a10-secondary-button` | `div`   |
 
 <hr />
 
@@ -132,12 +132,12 @@ handleClick  =  ()  =>  {
 
 List of class names for styling.
 
-| Name               | Element |
-| ------------------ | ------- |
-| `secondary-button` | `div`   |
-| `title`            | `div`   |
-| `subtitle`         | `div`   |
-| `paragraph`        | `div`   |
+| Name                   | Element |
+| ---------------------- | ------- |
+| `a10-secondary-button` | `div`   |
+| `a10-title`            | `div`   |
+| `a10-subtitle`         | `div`   |
+| `a10-paragraph`        | `div`   |
 
 <hr />
 
@@ -186,13 +186,13 @@ handleClick  =  ()  =>  {
 
 List of class names for styling.
 
-| Name              | Element |
-| ----------------- | ------- |
-| `advanced-button` | `div`   |
-| `img`             | `img`   |
-| `title`           | `div`   |
-| `subtitle`        | `div`   |
-| `paragraph`       | `div`   |
+| Name                  | Element |
+| --------------------- | ------- |
+| `a10-advanced-button` | `div`   |
+| `a10-img`             | `img`   |
+| `a10-title`           | `div`   |
+| `a10-subtitle`        | `div`   |
+| `a10-paragraph`       | `div`   |
 
 <hr />
 
@@ -223,8 +223,8 @@ List of class names for styling.
 
 | Name                 | Element |
 | -------------------- | ------- |
-| `header`             | `div`   |
-| `title`              | `h2`    |
+| `a10-header`         | `div`   |
+| `a10-title`          | `h2`    |
 | `myUL`(id not class) | `ul`    |
 
 <hr />
@@ -261,8 +261,8 @@ List of class names for styling.
 
 | Name                 | Element |
 | -------------------- | ------- |
-| `color-todo`         | `div`   |
-| `header`             | `div`   |
+| `a10-color-todo`     | `div`   |
+| `a10-header`         | `div`   |
 | `myUL`(id not class) | `ul`    |
 
 <hr />
