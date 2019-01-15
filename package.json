@@ -1,7 +1,17 @@
 {
   "name": "atomic10-components",
   "description": "Atomic10 is a React component library with clean, contemporary, and customizable components.",
-  "version": "1.0.1",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jameson13B/atomic10-components"
+  },
   "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
@@ -18,22 +28,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Jameson13B/atomic10-components"
-  },
   "peerDependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.2.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3"

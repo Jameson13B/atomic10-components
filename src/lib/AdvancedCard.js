@@ -1,6 +1,6 @@
 import React from "react";
-import { SecondaryButton } from "../index";
 import "./AdvancedCard.css";
+import "./Button.css";
 
 const AdvancedCard = ({
   title,
@@ -45,3 +45,13 @@ export default AdvancedCard;
 // btnColor: Button background color(default: Neon Carrot)
 // width: Width for card(default: 30%)
 // image: Image for header
+
+const SecondaryButton = ({ value, click, color = "#FF9933" }) => (
+  <div
+    className="a10-secondary-button"
+    onClick={e => click && click(e)}
+    style={{ border: `2px solid ${color}`, color: color }}
+  >
+    {value}
+  </div>
+);

@@ -1,9 +1,11 @@
 import React from "react";
-import "./BWTodo.css";
-import "../Input/TextInput.css";
-import { TextInput, SecondaryButton } from "../../lib/index";
+import "./CTodo.css";
+import "./TextInput.css";
+import "./Button.css";
 
-class BWTodo extends React.Component {
+// Background Color
+
+class CTodo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,6 +35,7 @@ class BWTodo extends React.Component {
     localStorage.setItem(`${this.props.title} list`, JSON.stringify(list));
   };
   handleInputChange = e => {
+    console.log(e.target);
     this.setState({ [e.target.name]: e.target.value });
   };
   handleDelete = e => {
@@ -54,23 +57,30 @@ class BWTodo extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div id="myDIV" className="a10-header">
-          <h2 className="a10-title">{this.state.title}</h2>
+      <div className="a10-color-todo">
+        <div
+          className="a10-header"
+          style={{
+            background: this.props.bkColor ? this.props.bkColor : "#FF9933"
+          }}
+        >
+          <h2 className="a10-title" style={{ color: this.props.btnColor }}>
+            {this.state.title}
+          </h2>
           <TextInput
             name="entry"
             change={e => this.handleInputChange(e)}
-            placeholder="New Item..."
             type="text"
             value={this.state.entry}
-            ftcolor="white"
-            bkcolor="white"
+            placeholder={this.props.placeholder ? this.props.placeholder : null}
+            ftcolor={this.props.ftColor ? this.props.ftColor : "white"}
+            bkcolor={this.props.inColor ? this.props.inColor : "white"}
             width="100%"
           />
           <SecondaryButton
             value="Add"
             click={this.handleAdd}
-            color="white"
+            color={this.props.btnColor ? this.props.btnColor : "white"}
             className="a10-addBtn"
           />
         </div>
@@ -91,8 +101,48 @@ class BWTodo extends React.Component {
   }
 }
 
-export default BWTodo;
+export default CTodo;
 
 // Attributes
 // title: To do list title
 // list: An array of todo items
+// placeholder: Input placeholder, can leave blank
+// bkColor: Header background color(default: Neon Carrot)
+// ftColor: Input font color(default: White)
+// inColor: Input botom line color(default: White)
+// btnColor: Button and title color(default: White)
+
+const TextInput = ({
+  type = "text",
+  label,
+  value,
+  placeholder,
+  change,
+  name,
+  ftcolor,
+  bkcolor = "#FF9933",
+  width
+}) => (
+  <div className="a10-simple-form-group">
+    {label && <label className="a10-simple-text-label">{label}</label>}
+    <input
+      type={type}
+      name={name}
+      className="a10-simple-text-input"
+      value={value}
+      placeholder={placeholder}
+      onChange={e => change && change(e)}
+      style={{ width: width, color: ftcolor, borderBottomColor: bkcolor }}
+    />
+  </div>
+);
+
+const SecondaryButton = ({ value, click, color = "#FF9933" }) => (
+  <div
+    className="a10-secondary-button"
+    onClick={e => click && click(e)}
+    style={{ border: `2px solid ${color}`, color: color }}
+  >
+    {value}
+  </div>
+);

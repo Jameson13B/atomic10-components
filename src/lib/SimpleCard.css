@@ -1,0 +1,25 @@
+.a10-simple-card {
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.a10-simple-card .a10-title {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.a10-simple-card .a10-subtitle {
+  color: grey;
+  font-style: italic;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.a10-simple-card .a10-paragraph {
+  margin-top: 10px;
+  overflow: auto;
+}
