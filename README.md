@@ -23,6 +23,8 @@ npm i atomic10-components
 > [Primary Button](#Primary-Button)  
 > [Secondary Button](#Secondary-Button)
 >
+> [Text Input](#Text-Input)
+>
 > [Simple Card](#Simple-Card)  
 > [Advanced Card](#Advanced-Card)
 >

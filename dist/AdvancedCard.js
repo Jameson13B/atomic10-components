@@ -1,6 +1,6 @@
 import React from "react";
-import { SecondaryButton } from "./index";
 import "./AdvancedCard.css";
+import "./Button.css";
 
 var AdvancedCard = function AdvancedCard(_ref) {
   var title = _ref.title,
@@ -41,14 +41,21 @@ var AdvancedCard = function AdvancedCard(_ref) {
   }) : null);
 };
 
-export default AdvancedCard; // title: Card title
-// subTitle: Card subtitle
-// paragraph: Card Paragraph
-// click: Callback function for clicking card
-// brdColor: Border color
-// bkColor: Card background color, accepts hex, rgb, and string(default: White)
-// btnClick: Callback function for button
-// btnValue: Button text(this is required for button to show)
-// btnColor: Button background color(default: Neon Carrot)
-// width: Width for card(default: 30%)
-// image: Image for header
+export default AdvancedCard;
+
+var SecondaryButton = function SecondaryButton(_ref2) {
+  var value = _ref2.value,
+      click = _ref2.click,
+      _ref2$color = _ref2.color,
+      color = _ref2$color === void 0 ? "#FF9933" : _ref2$color;
+  return React.createElement("div", {
+    className: "a10-secondary-button",
+    onClick: function onClick(e) {
+      return click && click(e);
+    },
+    style: {
+      border: "2px solid ".concat(color),
+      color: color
+    }
+  }, value);
+};

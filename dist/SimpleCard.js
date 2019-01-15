@@ -27,10 +27,4 @@ var SimpleCard = function SimpleCard(_ref) {
   }, paragraph));
 };
 
-export default SimpleCard; // title: Card title
-// subTitle: Card subtitle
-// paragraph: Card Paragraph
-// click: Callback function for clicking card
-// brdColor: Border color
-// bkColor: Card background color, accepts hex, rgb, and string(default: White)
-// width: Width for card(default: 30%)
+export default SimpleCard;

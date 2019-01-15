@@ -21,8 +21,4 @@ var PrimaryButton = function PrimaryButton(_ref) {
   }, value);
 };
 
-export default PrimaryButton; // Attributes
-// value: Button Text
-// click: Callback for onClick
-// bkcolor: Background color, accepts hex, rgb, and string(default: Neon Carrot)
-// ftcolor: Font color, accepts hex, rgb, and string(default: white)
+export default PrimaryButton;

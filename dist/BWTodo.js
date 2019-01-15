@@ -7,7 +7,7 @@ import _inherits from "/Users/jameson/personal-projects/atomic10-components/node
 import React from "react";
 import "./BWTodo.css";
 import "./TextInput.css";
-import { TextInput, SecondaryButton } from "../lib/index";
+import "./Button.css";
 
 var BWTodo =
 /*#__PURE__*/
@@ -38,7 +38,6 @@ function (_React$Component) {
     };
 
     _this.handleDelete = function (e) {
-      console.log(e.target.id);
       var list = _this.state.list;
       list.splice(e.target.id, e.target.id);
 
@@ -129,6 +128,54 @@ function (_React$Component) {
   return BWTodo;
 }(React.Component);
 
-export default BWTodo; // Attributes
-// title: To do list title
-// list: An array of todo items
+export default BWTodo;
+
+var TextInput = function TextInput(_ref) {
+  var _ref$type = _ref.type,
+      type = _ref$type === void 0 ? "text" : _ref$type,
+      label = _ref.label,
+      value = _ref.value,
+      placeholder = _ref.placeholder,
+      change = _ref.change,
+      name = _ref.name,
+      ftcolor = _ref.ftcolor,
+      _ref$bkcolor = _ref.bkcolor,
+      bkcolor = _ref$bkcolor === void 0 ? "#FF9933" : _ref$bkcolor,
+      width = _ref.width;
+  return React.createElement("div", {
+    className: "a10-simple-form-group"
+  }, label && React.createElement("label", {
+    className: "a10-simple-text-label"
+  }, label), React.createElement("input", {
+    type: type,
+    name: name,
+    className: "a10-simple-text-input",
+    value: value,
+    placeholder: placeholder,
+    onChange: function onChange(e) {
+      return change && change(e);
+    },
+    style: {
+      width: width,
+      color: ftcolor,
+      borderBottomColor: bkcolor
+    }
+  }));
+};
+
+var SecondaryButton = function SecondaryButton(_ref2) {
+  var value = _ref2.value,
+      click = _ref2.click,
+      _ref2$color = _ref2.color,
+      color = _ref2$color === void 0 ? "#FF9933" : _ref2$color;
+  return React.createElement("div", {
+    className: "a10-secondary-button",
+    onClick: function onClick(e) {
+      return click && click(e);
+    },
+    style: {
+      border: "2px solid ".concat(color),
+      color: color
+    }
+  }, value);
+};

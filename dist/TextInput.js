@@ -9,9 +9,9 @@ var TextInput = function TextInput(_ref) {
       placeholder = _ref.placeholder,
       change = _ref.change,
       name = _ref.name,
-      ftcolor = _ref.ftcolor,
-      _ref$bkcolor = _ref.bkcolor,
-      bkcolor = _ref$bkcolor === void 0 ? "#FF9933" : _ref$bkcolor,
+      ftColor = _ref.ftColor,
+      _ref$bkColor = _ref.bkColor,
+      bkColor = _ref$bkColor === void 0 ? "#FF9933" : _ref$bkColor,
       width = _ref.width;
   return React.createElement("div", {
     className: "a10-simple-form-group"
@@ -28,19 +28,10 @@ var TextInput = function TextInput(_ref) {
     },
     style: {
       width: width,
-      color: ftcolor,
-      borderBottomColor: bkcolor
+      color: ftColor,
+      borderBottomColor: bkColor
     }
   }));
 };
 
-export default TextInput; // Attributes
-// type: Input type(default: text)
-// label: Label above input *optional
-// value: Input value
-// placeholder: Placeholder value
-// change: Callback for onChange
-// name: Name attribute of input
-// ftcolor: Input font color
-// bkcolor: Input bottom border color(default: Neon Carrot)
-// width: Input width, accepts px, %, and rem
+export default TextInput;
