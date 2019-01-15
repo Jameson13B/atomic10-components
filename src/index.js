@@ -16,9 +16,13 @@ const App = () => (
     <h1>
       Atomic<span style={{ color: "#FF9933" }}>10</span> Component Library
     </h1>
+    <br />
     <TextInput label="Label Input" placeholder="name@example.com" width="30%" />
+    <br />
     <hr />
+    <br />
     <TextInput label="Password" placeholder="Enter Password" type="password" />
+    <br />
     <hr />
     <PrimaryButton value="Click" click={() => alert("Click")} />
     <hr />

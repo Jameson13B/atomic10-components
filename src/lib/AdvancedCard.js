@@ -34,18 +34,6 @@ const AdvancedCard = ({
 
 export default AdvancedCard;
 
-// title: Card title
-// subTitle: Card subtitle
-// paragraph: Card Paragraph
-// click: Callback function for clicking card
-// brdColor: Border color
-// bkColor: Card background color, accepts hex, rgb, and string(default: White)
-// btnClick: Callback function for button
-// btnValue: Button text(this is required for button to show)
-// btnColor: Button background color(default: Neon Carrot)
-// width: Width for card(default: 30%)
-// image: Image for header
-
 const SecondaryButton = ({ value, click, color = "#FF9933" }) => (
   <div
     className="a10-secondary-button"

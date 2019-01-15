@@ -25,6 +25,9 @@ npm i atomic10-components
 >
 > [Simple Card](#Simple-Card)  
 > [Advanced Card](#Advanced-Card)
+>
+> [Black & White To Do Form](#Black-and-White-To-Do-Form)  
+> [Color To Do Form](#Colored-To-Do-Form)
 
 ### Primary Button
 
@@ -92,6 +95,46 @@ List of class names for styling.
 | Name                   | Element |
 | ---------------------- | ------- |
 | `a10-secondary-button` | `div`   |
+
+<hr />
+
+### Text Input
+
+![Text Input](./ReadmeImg/textinput.png)
+
+This is a customizable input component. Just like a regular input the type, value, placeholder and more can be specified as properties along with color customization, width, and more features.
+
+```
+import { TextInput } from "atomic10-components";
+
+<TextInput label="Label Input" placeholder="name@example.com" width="30%" />
+<hr />
+<TextInput label="Password" placeholder="Enter Password" type="password" />
+```
+
+#### Properties
+
+| Name          | Type     | Default       | Description                                             |
+| ------------- | -------- | ------------- | ------------------------------------------------------- |
+| `type`        | string   | `text`        | Input type attribute                                    |
+| `label`       | string   | `null`        | Label above input                                       |
+| `value`       | string   | `null`        | Input value attribute                                   |
+| `placeholder` | string   | `null`        | Input placeholder value                                 |
+| `change`      | function | `null`        | Callback for onChange                                   |
+| `name`        | string   | `null`        | Name attribute of input                                 |
+| `ftColor`     | string   | `black`       | Input font color. Accepts hex, rgb, and string          |
+| `bkColor`     | string   | `Neon Orange` | Input bottom border color. Accepts hex, rgb, and string |
+| `width`       | string   | `null`        | Input width. Accepts px, %, and rem                     |
+
+#### Styling
+
+List of class names for styling.
+
+| Name                    | Element |
+| ----------------------- | ------- |
+| `a10-simple-form-group` | `div`   |
+| `a10-simple-text-label` | `label` |
+| `a10-simple-text-input` | `input` |
 
 <hr />
 

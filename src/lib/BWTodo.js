@@ -92,10 +92,6 @@ class BWTodo extends React.Component {
 
 export default BWTodo;
 
-// Attributes
-// title: To do list title
-// list: An array of todo items
-
 const TextInput = ({
   type = "text",
   label,

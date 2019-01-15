@@ -103,15 +103,6 @@ class CTodo extends React.Component {
 
 export default CTodo;
 
-// Attributes
-// title: To do list title
-// list: An array of todo items
-// placeholder: Input placeholder, can leave blank
-// bkColor: Header background color(default: Neon Carrot)
-// ftColor: Input font color(default: White)
-// inColor: Input botom line color(default: White)
-// btnColor: Button and title color(default: White)
-
 const TextInput = ({
   type = "text",
   label,

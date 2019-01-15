@@ -12,8 +12,3 @@ const SecondaryButton = ({ value, click, color = "#FF9933" }) => (
 );
 
 export default SecondaryButton;
-
-// Attributes
-// value: Button Text
-// click: Callback for onClick
-// color: Border and font color, accepts hex, rgb, and string(default: Neon Carrot)

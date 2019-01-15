@@ -13,5 +13,3 @@ export { BWTodo };
 export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
-
-// Imported components on To dos need to be built.
