@@ -62,6 +62,7 @@ const App = () => (
     <hr />
     <CustomDropdown
       name='tester'
+      value=''
       // value={this.state.value}
       onChange={e => alert(`Changed to ${e.target.value}`)}
       content={content}

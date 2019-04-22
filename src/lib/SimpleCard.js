@@ -1,5 +1,5 @@
-import React from "react";
-import "./SimpleCard.css";
+import React from 'react';
+import styled from 'styled-components';
 
 const SimpleCard = ({
   title,
@@ -8,19 +8,47 @@ const SimpleCard = ({
   click,
   brdColor,
   bkColor,
-  width = "30%"
+  width
 }) => {
   return (
-    <div
-      className="a10-simple-card"
+    <CustomSimpleCard
+      className='a10-simple-card'
       onClick={click}
-      style={{ width: width, borderColor: brdColor, background: bkColor }}
+      brdColor={brdColor}
+      width={width}
+      bkColor={bkColor}
     >
-      <div className="a10-title">{title}</div>
-      <div className="a10-subtitle">{subTitle}</div>
-      <div className="a10-paragraph">{paragraph}</div>
-    </div>
+      <CustomTitle className='a10-title'>{title}</CustomTitle>
+      <CustomSubTitle className='a10-subtitle'>{subTitle}</CustomSubTitle>
+      <CustomParagraph className='a10-paragraph'>{paragraph}</CustomParagraph>
+    </CustomSimpleCard>
   );
 };
 
 export default SimpleCard;
+
+// Styled components
+const CustomSimpleCard = styled.div`
+  border: ${props => `1px solid ${props.brdColor || 'black'}`};
+  border-radius: 5px;
+  background: ${props => props.bkColor};
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: ${props => props.width || '30%'};
+`;
+const CustomTitle = styled.div`
+  overflow: auto;
+  white-space: nowrap;
+`;
+const CustomSubTitle = styled.div`
+  color: grey;
+  font-style: italic;
+  overflow: auto;
+  white-space: nowrap;
+`;
+const CustomParagraph = styled.div`
+  margin-top: 10px;
+  overflow: auto;
+`;
