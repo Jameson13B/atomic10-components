@@ -1,11 +1,11 @@
-.a10-simple-form-group {
+.a10-header .a10-simple-form-group {
   margin-bottom: 1rem;
   width: 100%;
 }
-.a10-simple-text-label {
+.a10-header .a10-simple-text-label {
   display: block;
 }
-.a10-simple-text-input {
+.a10-header .a10-simple-text-input {
   background: transparent;
   border-top: 0;
   border-left: 0;

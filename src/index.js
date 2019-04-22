@@ -23,12 +23,23 @@ const App = () => (
       Atomic<span style={{ color: '#FF9933' }}>10</span> Component Library
     </h1>
     <br />
-    <TextInput label='Label Input' placeholder='name@example.com' width='30%' />
+    <TextInput label='Label Input' placeholder='name@example.com' width='50%' />
     <br />
     <hr />
     <br />
     <TextInput label='Password' placeholder='Enter Password' type='password' />
     <br />
+    <hr />
+    <CustomDropdown
+      name='tester'
+      value=''
+      // value={this.state.value}
+      onChange={e => alert(`Changed to ${e.target.value}`)}
+      content={content}
+      ftColor='slategray'
+      bkColor='#eee'
+      width='10em'
+    />
     <hr />
     <PrimaryButton value='Click' click={() => alert('Click')} />
     <hr />
@@ -58,17 +69,6 @@ const App = () => (
       subTitle='Subtitle'
       paragraph="Simple card that doesn't have an image and a button. This is a paragraph."
       click={() => alert('Card Click')}
-    />
-    <hr />
-    <CustomDropdown
-      name='tester'
-      value=''
-      // value={this.state.value}
-      onChange={e => alert(`Changed to ${e.target.value}`)}
-      content={content}
-      ftColor='slategray'
-      bkColor='#eee'
-      width='10em'
     />
   </div>
 );
