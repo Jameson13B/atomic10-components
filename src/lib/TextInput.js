@@ -6,7 +6,7 @@ const TextInput = ({
   label,
   value,
   placeholder,
-  change,
+  onChange,
   name,
   ftColor,
   bkColor,
@@ -20,7 +20,7 @@ const TextInput = ({
       className='a10-simple-text-input'
       value={value}
       placeholder={placeholder}
-      onChange={e => change && change(e)}
+      onChange={e => onChange && onChange(e)}
       ftColor={ftColor}
       borderColor={bkColor}
       width={width}

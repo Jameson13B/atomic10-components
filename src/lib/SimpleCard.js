@@ -5,7 +5,7 @@ const SimpleCard = ({
   title,
   subTitle,
   paragraph,
-  click,
+  onClick,
   brdColor,
   bkColor,
   width
@@ -13,7 +13,7 @@ const SimpleCard = ({
   return (
     <CustomSimpleCard
       className='a10-simple-card'
-      onClick={click}
+      onClick={onClick}
       brdColor={brdColor}
       width={width}
       bkColor={bkColor}

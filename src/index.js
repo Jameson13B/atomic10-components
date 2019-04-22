@@ -57,7 +57,7 @@ const App = () => (
       title='Simple Card'
       subTitle='Subtitle'
       paragraph='Advanced card that has an image and a button. This is a paragraph.'
-      click={() => alert('Card Click')}
+      onClick={() => alert('Card Click')}
       btnClick={() => alert('Button Click')}
       btnValue='Click'
       image='https://goo.gl/2QuCc5'
@@ -68,7 +68,7 @@ const App = () => (
       title='Simple Card'
       subTitle='Subtitle'
       paragraph="Simple card that doesn't have an image and a button. This is a paragraph."
-      click={() => alert('Card Click')}
+      onClick={() => alert('Card Click')}
     />
   </div>
 );
