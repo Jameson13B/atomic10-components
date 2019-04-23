@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import './Dropdown.css';
 
 const CustomDropdown = styled.div`
   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 93% 0;

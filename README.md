@@ -126,7 +126,7 @@ import { TextInput } from "atomic10-components";
 | `name`        | string   | `null`        | Name attribute of input                                 |
 | `ftColor`     | string   | `black`       | Input font color. Accepts hex, rgb, and string          |
 | `bkColor`     | string   | `Neon Orange` | Input bottom border color. Accepts hex, rgb, and string |
-| `width`       | string   | `null`        | Input width. Accepts px, %, and rem                     |
+| `width`       | string   | `null`        | Input width. Accepts px, %, and rem/em                  |
 
 #### Styling
 
@@ -143,8 +143,6 @@ List of class names for styling.
 ### Dropdown
 
 ![Dropdown](./ReadmeImg/dropdown.png)
-
-<!-- Update description and image -->
 
 This is a customizable dropdown component. Just like a dropdown the value, onChange, and more can be specified as properties along with color customization and width. The content property is an array of objects to supply the dropdown choices(see [example](#Content-Example)).
 
@@ -170,15 +168,15 @@ import { Dropdown } from "atomic10-components";
 
 #### Properties
 
-| Name       | Type     | Default      | Description                                             |
-| ---------- | -------- | ------------ | ------------------------------------------------------- |
-| `name`     | string   | `null`       | Input type attribute                                    |
-| `value`    | string   | `null`       | Label above input                                       |
-| `onChange` | function | `null`       | Input value attribute                                   |
-| `ftColor`  | string   | `slategraay` | Input font color. Accepts hex, rgb, and string          |
-| `bkColor`  | string   | `#eee`       | Input bottom border color. Accepts hex, rgb, and string |
-| `width`    | string   | `null`       | Input width. Accepts px, %, and rem                     |
-| `content`  | array    | `null`       | Content is array of choices formatted as objects        |
+| Name       | Type     | Default     | Description                                                |
+| ---------- | -------- | ----------- | ---------------------------------------------------------- |
+| `name`     | string   | `null`      | Name attribute for `select` element's value                |
+| `value`    | string   | `null`      | Dropdown value attribute                                   |
+| `onChange` | function | `null`      | Callback for onChange                                      |
+| `ftColor`  | string   | `slategray` | Dropdown font color. Accepts hex, rgb, and string          |
+| `bkColor`  | string   | `#eee`      | Dropdown bottom border color. Accepts hex, rgb, and string |
+| `width`    | string   | `null`      | Dropdown width. Accepts px, %, and rem/em                  |
+| `content`  | array    | `null`      | Content is array of choices formatted as objects           |
 
 > #### `Content-Example`:
 >
@@ -291,7 +289,7 @@ import { AdvancedCard } from "atomic10-components";
 | `paragraph` | string   | `null`        | Paragraph for card                                  |
 | `title`     | string   | `null`        | Text of the card                                    |
 | `subTitle`  | string   | `null`        | Subtitle for card                                   |
-| `width`     | string   | `30%`         | Width for card                                      |
+| `width`     | string   | `30%`         | Width for card. Accepts px, %, and rem/em           |
 
 #### Styling
 
