@@ -5,7 +5,7 @@ import BWTodo from './BWTodo';
 import CTodo from './CTodo';
 import AdvancedCard from './AdvancedCard';
 import SimpleCard from './SimpleCard';
-import CustomDropdown from './Dropdown';
+import Dropdown from './Dropdown';
 
 export { TextInput };
 export { PrimaryButton };
@@ -14,4 +14,4 @@ export { BWTodo };
 export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
-export { CustomDropdown };
+export { Dropdown };

@@ -6,7 +6,7 @@ const CustomDropdown = styled.div`
   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 93% 0;
   height: 29px;
   overflow: hidden;
-  width: ${props => props.width || '6em'};
+  width: ${props => props.width || '200px'};
   background-color: ${props => props.bkColor || '#eee'};
   border-radius: 5px;
 `;

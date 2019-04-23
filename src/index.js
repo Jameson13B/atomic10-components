@@ -9,7 +9,7 @@ import {
   CTodo,
   AdvancedCard,
   SimpleCard,
-  CustomDropdown
+  Dropdown
 } from './lib/index';
 
 const App = () => (
@@ -30,7 +30,15 @@ const App = () => (
     <TextInput label='Password' placeholder='Enter Password' type='password' />
     <br />
     <hr />
-    <CustomDropdown
+    <Dropdown
+      name='tester'
+      value=''
+      // value={this.state.value}
+      onChange={e => alert(`Changed to ${e.target.value}`)}
+      content={content}
+    />
+    <br />
+    <Dropdown
       name='tester'
       value=''
       // value={this.state.value}

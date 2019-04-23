@@ -11,8 +11,8 @@ const AdvancedCard = ({
   bkColor,
   btnClick,
   btnValue,
-  btnColor = '#FF9933',
-  width = '30%',
+  btnColor,
+  width,
   image
 }) => {
   return (
@@ -55,7 +55,7 @@ const CustomAdvCard = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px;
-  width: ${props => props.width};
+  width: ${props => props.width || '400px'};
 `;
 const CustomImg = styled.img`
   width: 100%;
