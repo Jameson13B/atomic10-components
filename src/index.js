@@ -30,37 +30,45 @@ const App = () => (
     <TextInput label='Password' placeholder='Enter Password' type='password' />
     <br />
     <hr />
-    <Dropdown
-      name='tester'
-      value=''
-      // value={this.state.value}
-      onChange={e => alert(`Changed to ${e.target.value}`)}
-      content={content}
-    />
     <br />
     <Dropdown
       name='tester'
       value=''
-      // value={this.state.value}
       onChange={e => alert(`Changed to ${e.target.value}`)}
       content={content}
-      ftColor='slategray'
-      bkColor='#eee'
-      width='10em'
     />
+    <br />
     <hr />
+    <br />
+    <Dropdown
+      name='tester'
+      value=''
+      onChange={e => alert(`Changed to ${e.target.value}`)}
+      content={content}
+      ftColor='white'
+      bkColor='#FF9933'
+    />
+    <br />
+    <hr />
+    <br />
     <PrimaryButton value='Click' click={() => alert('Click')} />
     <hr />
+    <br />
     <SecondaryButton value='Click' click={() => alert('Click')} />
     <hr />
+    <br />
     <CTodo
       list={['Item 1', 'Item 2', 'Item 3']}
       title='Color Todo'
       placeholder='New Item...'
     />
+    <br />
     <hr />
+    <br />
     <BWTodo list={['Item 1', 'Item 2', 'Item 3']} title='B&W Todo' />
+    <br />
     <hr />
+    <br />
     <AdvancedCard
       title='Simple Card'
       subTitle='Subtitle'
@@ -71,7 +79,9 @@ const App = () => (
       image='https://goo.gl/2QuCc5'
       width='50%'
     />
+    <br />
     <hr />
+    <br />
     <SimpleCard
       title='Simple Card'
       subTitle='Subtitle'

@@ -122,7 +122,7 @@ import { TextInput } from "atomic10-components";
 | `label`       | string   | `null`        | Label above input                                       |
 | `value`       | string   | `null`        | Input value attribute                                   |
 | `placeholder` | string   | `null`        | Input placeholder value                                 |
-| `change`      | function | `null`        | Callback for onChange                                   |
+| `onChange`    | function | `null`        | Callback for onChange                                   |
 | `name`        | string   | `null`        | Name attribute of input                                 |
 | `ftColor`     | string   | `black`       | Input font color. Accepts hex, rgb, and string          |
 | `bkColor`     | string   | `Neon Orange` | Input bottom border color. Accepts hex, rgb, and string |
@@ -140,6 +140,80 @@ List of class names for styling.
 
 <hr />
 
+### Dropdown
+
+![Dropdown](./ReadmeImg/dropdown.png)
+
+<!-- Update description and image -->
+
+This is a customizable dropdown component. Just like a dropdown the value, onChange, and more can be specified as properties along with color customization and width. The content property is an array of objects to supply the dropdown choices(see [example](#Content-Example)).
+
+```
+import { Dropdown } from "atomic10-components";
+
+<Dropdown
+  name='tester'
+  value={this.state.value}
+  onChange={e => alert(`Changed to ${e.target.value}`)}
+  content={content}
+/>
+<hr />
+<Dropdown
+  name='tester'
+  value={this.state.value}
+  onChange={e => alert(`Changed to ${e.target.value}`)}
+  content={content}
+  ftColor='white'
+  bkColor='#FF9933'
+/>
+```
+
+#### Properties
+
+| Name       | Type     | Default      | Description                                             |
+| ---------- | -------- | ------------ | ------------------------------------------------------- |
+| `name`     | string   | `null`       | Input type attribute                                    |
+| `value`    | string   | `null`       | Label above input                                       |
+| `onChange` | function | `null`       | Input value attribute                                   |
+| `ftColor`  | string   | `slategraay` | Input font color. Accepts hex, rgb, and string          |
+| `bkColor`  | string   | `#eee`       | Input bottom border color. Accepts hex, rgb, and string |
+| `width`    | string   | `null`       | Input width. Accepts px, %, and rem                     |
+| `content`  | array    | `null`       | Content is array of choices formatted as objects        |
+
+> #### `Content-Example`:
+>
+> `text` and `value` fields are require. `key` field is optional.
+>
+> ```
+> const content = [
+> {
+>    text: 'Item One',
+>    value: 'one',
+>    key: 1
+>  },
+>  {
+>    text: 'Item Two',
+>    value: 'two',
+>    key: 2
+>  },
+>  {
+>    text: 'Item Three',
+>    value: 'three',
+>    key: 3
+>  }
+> ];
+> ```
+
+#### Styling
+
+List of class names for styling.
+
+| Name           | Element |
+| -------------- | ------- |
+| `a10-dropdown` | `div`   |
+
+<hr />
+
 ### Simple Card
 
 ![Simple Card](./ReadmeImg/simplecard.png)
@@ -149,15 +223,11 @@ This is a simple card that can store data for a product, service, etc. Card can 
 ```
 import { SimpleCard } from "atomic10-components";
 
-handleClick  =  ()  =>  {
-	alert("Click");
-};
-
 <SimpleCard
   title="Simple Card"
   subTitle="Subtitle"
   paragraph="Simple card that doesn't have an image and a button. This is a paragraph."
-  click={() => alert("Card Click")}
+  onClick={() => alert("Card Click")}
 />
 ```
 
@@ -167,7 +237,7 @@ handleClick  =  ()  =>  {
 | ----------- | -------- | ------- | --------------------------------------------------- |
 | `bkColor`   | string   | `White` | Card background color. Accepts hex, rgb, and string |
 | `brdColor`  | string   | `Black` | Border color. Accepts hex, rgb, and string          |
-| `click`     | function | `null`  | Callback for card onClick                           |
+| `onClick`   | function | `null`  | Callback for card onClick                           |
 | `paragraph` | string   | `null`  | Paragraph for card                                  |
 | `title`     | string   | `null`  | Text of the card                                    |
 | `subTitle`  | string   | `null`  | Subtitle for card                                   |
@@ -195,15 +265,11 @@ This is an advanced card that can store data for a product, service, profile, et
 ```
 import { AdvancedCard } from "atomic10-components";
 
-handleClick  =  ()  =>  {
-	alert("Click");
-};
-
 <AdvancedCard
   title="Simple Card"
   subTitle="Subtitle"
   paragraph="Advanced card that has an image and a button. This is a paragraph."
-  click={() => alert("Card Click")}
+  onClick={() => alert("Card Click")}
   btnClick={() => alert("Button Click")}
   btnValue="Click"
   image="https://goo.gl/2QuCc5"
@@ -220,7 +286,7 @@ handleClick  =  ()  =>  {
 | `btnClick`  | function | `null`        | Callback for button onClick                         |
 | `btnColor`  | string   | `Neon Carrot` | Button color. Accepts hex, rgb, and string          |
 | `btnValue`  | string   | `Black`       | Text of the button                                  |
-| `click`     | function | `null`        | Callback for card onClick                           |
+| `onClick`   | function | `null`        | Callback for card onClick                           |
 | `image`     | image    | `null`        | Image for header                                    |
 | `paragraph` | string   | `null`        | Paragraph for card                                  |
 | `title`     | string   | `null`        | Text of the card                                    |
