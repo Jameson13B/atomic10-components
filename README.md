@@ -44,7 +44,7 @@ handleClick  =  ()  =>  {
 	alert("Click");
 };
 
-<PrimaryButton  value="Click"  click={handleClick}  />
+<PrimaryButton  value="Click"  onClick={handleClick}  />
 ```
 
 #### Properties
@@ -52,7 +52,7 @@ handleClick  =  ()  =>  {
 | Name      | Type     | Default       | Description                                    |
 | --------- | -------- | ------------- | ---------------------------------------------- |
 | `bkcolor` | string   | `Neon Carrot` | Background color. Accepts hex, rgb, and string |
-| `click`   | function | `null`        | Callback for buttons onClick                   |
+| `onClick` | function | `null`        | Callback for buttons onClick                   |
 | `ftcolor` | string   | `White`       | Font color. Accepts hex, rgb, and string       |
 | `value`   | string   | `null`        | Text of the button                             |
 
@@ -79,16 +79,16 @@ handleClick  =  ()  =>  {
 	alert("Click");
 };
 
-<SecondaryButton  value="Click"  click={handleClick}  />
+<SecondaryButton  value="Click"  onClick={handleClick}  />
 ```
 
 #### Properties
 
-| Name    | Type     | Default       | Description                                         |
-| ------- | -------- | ------------- | --------------------------------------------------- |
-| `click` | function | `null`        | Callback for buttons onClick                        |
-| `color` | string   | `Neon Carrot` | Border and font color. Accepts hex, rgb, and string |
-| `value` | string   | `null`        | Text of the button                                  |
+| Name      | Type     | Default       | Description                                         |
+| --------- | -------- | ------------- | --------------------------------------------------- |
+| `onClick` | function | `null`        | Callback for buttons onClick                        |
+| `color`   | string   | `Neon Carrot` | Border and font color. Accepts hex, rgb, and string |
+| `value`   | string   | `null`        | Text of the button                                  |
 
 #### Styling
 
