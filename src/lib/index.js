@@ -6,6 +6,7 @@ import CTodo from './CTodo';
 import AdvancedCard from './AdvancedCard';
 import SimpleCard from './SimpleCard';
 import Dropdown from './Dropdown';
+import ToggleSwitch from './ToggleSwitch';
 
 export { TextInput };
 export { PrimaryButton };
@@ -15,3 +16,4 @@ export { CTodo };
 export { AdvancedCard };
 export { SimpleCard };
 export { Dropdown };
+export { ToggleSwitch };

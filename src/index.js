@@ -9,7 +9,8 @@ import {
   CTodo,
   AdvancedCard,
   SimpleCard,
-  Dropdown
+  Dropdown,
+  ToggleSwitch
 } from './lib/index';
 
 const App = () => (
@@ -57,6 +58,14 @@ const App = () => (
     <SecondaryButton value='Click' click={() => alert('Click')} />
     <hr />
     <br />
+    <ToggleSwitch
+      checkIcon='power_off'
+      uncheckIcon='power'
+      defaultChecked=''
+      onChange=''
+      label='Example Toggle Switch'
+    />
+    <hr />
     <CTodo
       list={['Item 1', 'Item 2', 'Item 3']}
       title='Color Todo'

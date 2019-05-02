@@ -13,6 +13,7 @@
     "url": "https://github.com/Jameson13B/atomic10-components"
   },
   "dependencies": {
+    "react-toggle": "^4.0.2",
     "styled-components": "^4.2.0"
   },
   "scripts": {
