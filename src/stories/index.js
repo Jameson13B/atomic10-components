@@ -13,7 +13,8 @@ import {
   AdvancedCard,
   SimpleCard,
   BWTodo,
-  CTodo
+  CTodo,
+  ToggleSwitch
 } from '../lib/index.js';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
@@ -55,6 +56,26 @@ storiesOf('Dropdowns', module)
       ftColor='whitesmoke'
       bkColor='tomato'
       width='10em'
+    />
+  ));
+
+storiesOf('Toggle Switch', module)
+  .add('Toggle Switch Plug Icons', () => (
+    <ToggleSwitch
+      checkIcon='power_off'
+      uncheckIcon='power'
+      defaultChecked='true'
+      onChange={action('changed')}
+      label='Example Toggle Switch'
+    />
+  ))
+  .add('Toggle Switch Alarm Icons', () => (
+    <ToggleSwitch
+      checkIcon='alarm_off'
+      uncheckIcon='alarm'
+      defaultChecked='true'
+      onChange={action('changed')}
+      label='Example Toggle Switch'
     />
   ));
 

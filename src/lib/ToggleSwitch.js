@@ -25,7 +25,9 @@ const ToggleSwitch = ({
         defaultChecked={defaultChecked}
         onChange={onChange}
       />
-      <Label htmlFor='toggle-status'>{label}</Label>
+      <Label htmlFor='toggle-status' className='a10-toggle-switch-label'>
+        {label}
+      </Label>
     </Container>
   );
 };

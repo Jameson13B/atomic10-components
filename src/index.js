@@ -56,15 +56,17 @@ const App = () => (
     <hr />
     <br />
     <SecondaryButton value='Click' click={() => alert('Click')} />
+    <br />
     <hr />
     <br />
     <ToggleSwitch
       checkIcon='power_off'
       uncheckIcon='power'
-      defaultChecked=''
-      onChange=''
+      // defaultChecked={'default checked state'}
+      // onChange={'onChange Callback'}
       label='Example Toggle Switch'
     />
+    <br />
     <hr />
     <CTodo
       list={['Item 1', 'Item 2', 'Item 3']}

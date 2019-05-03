@@ -28,7 +28,8 @@ https://atomic10-storybook.jamesonb.com
 > [Secondary Button](#Secondary-Button)
 >
 > [Text Input](#Text-Input)  
-> [Dropdown](#Dropdown)
+> [Dropdown](#Dropdown)  
+> [Toggle Switch](#Toggle-Switch)
 >
 > [Simple Card](#Simple-Card)  
 > [Advanced Card](#Advanced-Card)
@@ -214,6 +215,56 @@ List of class names for styling.
 | Name           | Element |
 | -------------- | ------- |
 | `a10-dropdown` | `div`   |
+
+<hr />
+
+### Toggle Switch
+
+![Toggle Switch](./ReadmeImg/toggleswitch.png)
+
+This is a customizable toggle switch. The toggle can be customized with a label, checked/unchecked icons, defaultChecked state, and an onChange function.
+
+To change the primary color from orange:
+
+```
+// CSS
+.react-toggle {
+  background: blue
+}
+```
+
+```
+import { ToggleSwitch } from "atomic10-components";
+
+<ToggleSwitch
+  checkIcon='power_off'
+  uncheckIcon='power'
+  defaultChecked={'default checked state'}
+  onChange={'onChange Callback'}
+  label='Example Toggle Switch'
+/>
+```
+
+#### Properties
+
+| Name             | Type       | Default | Description                                                        |
+| ---------------- | ---------- | ------- | ------------------------------------------------------------------ |
+| `checkIcon`      | string     | `null`  | Icon name from [Material Design](https://material.io/tools/icons/) |
+| `uncheckIcon`    | string     | `null`  | Icon name from [Material Design](https://material.io/tools/icons/) |
+| `defaultChecked` | state/prop | `null`  | State/prop for defaultChecked value                                |
+| `onChange`       | function   | `null`  | Callback for onChange                                              |
+| `label`          | string     | `null`  | Label for toggle                                                   |
+
+#### Styling
+
+List of class names for styling.
+
+| Name                      | Element       |
+| ------------------------- | ------------- |
+| `a10-toggle-switch-label` | `label`       |
+| `react-toggle-track`      | `div`(Switch) |
+| `react-toggle-thumb`      | `div`(Slider) |
+| `material-icons`          | `i`(Icon)     |
 
 <hr />
 
